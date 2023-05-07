@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COVID-19 Tracker Survey</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>COVID-19 Tracker Survey</h1>
+  <form id="survey-form">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+    </div>
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" required>
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required>
+    </div>
+    <div>
+      <label for="pincode">Pin Code:</label>
+      <input type="text" id="pincode" required>
+    </div>
+    <div>
+      <label for="state">State:</label>
+      <select id="state" required>
+        <option value="">Select</option>
+        <option value="state1">State 1</option>
+        <option value="state2">State 2</option>
+        <option value="state3">State 3</option>
+      </select>
+    </div>
+    <div>
+      <label for="district">District:</label>
+      <select id="district" required>
+        <option value="">Select</option>
+      </select>
+    </div>
+    <div>
+      <label>COVID-19 Symptoms:</label>
+      <ul>
+        <li><input type="checkbox" name="symptoms" value="fever">Fever</li>
+        <li><input type="checkbox" name="symptoms" value="cough">Cough</li>
+        <li><input type="checkbox" name="symptoms" value="shortness_of_breath">Shortness of Breath</li>
+      </ul>
+    </div>
+    <div>
+      <label for="travel">Have you traveled in the past 14 days?</label>
+      <input type="radio" name="travel" value="yes">Yes
+      <input type="radio" name="travel" value="no">No
+    </div>
+    <div>
+      <label for="contact">Have you come in contact with a COVID-19 positive person?</label>
+      <input type="radio" name="contact" value="yes">Yes
+      <input type="radio" name="contact" value="no">No
+    </div>
+    <div>
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments"></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
